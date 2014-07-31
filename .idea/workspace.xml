@@ -23,38 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="34" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="799">
+            <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tally.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tally.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="47" selection-start="1225" selection-end="1225" vertical-scroll-proportion="-11.346154" vertical-offset="300" max-vertical-offset="1649">
-              <folding>
-                <marker date="1406824048848" expanded="true" signature="578:601" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="42" selection-start="325" selection-end="325" vertical-scroll-proportion="0.11525424" vertical-offset="0" max-vertical-offset="1479">
-              <folding>
-                <marker date="1406833272922" expanded="true" signature="776:801" placeholder="SELECT id, n..days..." />
-                <marker date="1406833272922" expanded="true" signature="977:1003" placeholder="SELECT id, n..items..." />
-                <marker date="1406833272922" expanded="true" signature="1158:1192" placeholder="SELECT id FR..users..." />
-                <marker date="1406833272922" expanded="true" signature="1214:1484" placeholder="SELECT i.id ..tally..." />
-                <marker date="1406833272922" expanded="true" signature="1518:1885" placeholder="INSERT INTO ..." />
-                <marker date="1406833272922" expanded="true" signature="1578:1614" placeholder="SELECT u.id ..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -76,9 +49,9 @@
         <option value="$PROJECT_DIR$/pin.php" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/tally.php" />
         <option value="$PROJECT_DIR$/db.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -282,7 +255,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="66" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1649">
           <folding>
-            <marker date="1406824048848" expanded="true" signature="578:601" placeholder="..." />
+            <marker date="1406824048848" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -302,33 +275,43 @@
         <state line="6" column="8" selection-start="313" selection-end="361" vertical-scroll-proportion="0.09922179" vertical-offset="0" max-vertical-offset="1028" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="34" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="799">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/index.php.old">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tally.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="47" selection-start="1225" selection-end="1225" vertical-scroll-proportion="-11.346154" vertical-offset="300" max-vertical-offset="1649">
-          <folding>
-            <marker date="1406824048848" expanded="true" signature="578:601" placeholder="..." />
-          </folding>
+        <state line="229" column="0" selection-start="0" selection-end="39627" vertical-scroll-proportion="0.21534938" vertical-offset="3705" max-vertical-offset="4760">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="42" selection-start="325" selection-end="325" vertical-scroll-proportion="0.11525424" vertical-offset="0" max-vertical-offset="1479">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
           <folding>
-            <marker date="1406833272922" expanded="true" signature="776:801" placeholder="SELECT id, n..days..." />
-            <marker date="1406833272922" expanded="true" signature="977:1003" placeholder="SELECT id, n..items..." />
-            <marker date="1406833272922" expanded="true" signature="1158:1192" placeholder="SELECT id FR..users..." />
-            <marker date="1406833272922" expanded="true" signature="1214:1484" placeholder="SELECT i.id ..tally..." />
-            <marker date="1406833272922" expanded="true" signature="1518:1885" placeholder="INSERT INTO ..." />
-            <marker date="1406833272922" expanded="true" signature="1578:1614" placeholder="SELECT u.id ..." />
+            <marker date="1406833272922" expanded="true" signature="-1:-1" placeholder="SELECT id, n..days..." />
+            <marker date="1406833272922" expanded="true" signature="-1:-1" placeholder="SELECT id, n..items..." />
+            <marker date="1406833272922" expanded="true" signature="-1:-1" placeholder="SELECT id FR..users..." />
+            <marker date="1406833272922" expanded="true" signature="-1:-1" placeholder="SELECT i.id ..tally..." />
+            <marker date="1406833272922" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1406833272922" expanded="true" signature="-1:-1" placeholder="SELECT u.id ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tally.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="47" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.33333334" vertical-offset="300" max-vertical-offset="1649">
+          <folding>
+            <marker date="1406824048848" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+          <folding />
         </state>
       </provider>
     </entry>
