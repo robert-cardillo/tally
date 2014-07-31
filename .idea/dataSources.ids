@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source source="LOCAL" name="MySQL - tally@localhost" uuid="4ee688a4-6831-4ba0-b840-9978f954afcc">
-    <database-info product="MySQL" version="5.5.24-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )">
+    <database-info product="MySQL" version="5.6.12-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <schema name="" catalog="tally"/>
     <table name="days" schema="" catalog="tally" type="TABLE">
-      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="index" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="10" precision="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="items" schema="" catalog="tally" type="TABLE">
@@ -36,5 +35,11 @@
       <column name="pin" sqlType="VARCHAR" length="5" precision="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
+    <procedure name="week_monday" schema="" catalog="tally" type="2">
+      <prototype>
+        <parameter name="pdate" sqlType="DATE" length="10" precision="10" nullable="true" jdbcType="91" type="1" index="1"/>
+        <parameter name="" sqlType="DATE" length="10" precision="10" nullable="true" jdbcType="91" type="5" index="0"/>
+      </prototype>
+    </procedure>
   </data-source>
 </component>

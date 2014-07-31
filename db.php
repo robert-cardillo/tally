@@ -1,11 +1,19 @@
 <?php
-DEFINE('DB_HOST', 'localhost');
-DEFINE('DB_USER', 'root');
-DEFINE('DB_PASSWORD', '');
-DEFINE('DB_DATABASE', 'tally');
-DEFINE('DB_PORT', 3306);
+if (getenv('OPENSHIFT_GEAR_NAME')) {
+    define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
+    define('DB_PORT', getenv('OPENSHIFT_MYSQL_DB_PORT'));
+    define('DB_USER', getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
+    define('DB_PASS', getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
+    define('DB_NAME', getenv('OPENSHIFT_GEAR_NAME'));
+} else {
+    define('DB_HOST', 'localhost');
+    define('DB_PORT', 3306);
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+    define('DB_NAME', 'tally');
+}
 
-$db = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
+$db = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
 if ($db->connect_error) {
     die('Connect Error (' . $db->connect_errno . ') ' . $db->connect_error);
