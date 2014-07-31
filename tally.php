@@ -1,4 +1,4 @@
-<?php
+<?
 include('header.php');
 
 var_dump($_POST);
@@ -16,8 +16,8 @@ $stmt->store_result();
 $stmt->bind_result($item_id, $day_id, $done);
 ?>
 <form action="" method="post">
-    <input type="hidden" name="year" value="<?php echo $year; ?>">
-    <input type="hidden" name="week" value="<?php echo $week; ?>">
+    <input type="hidden" name="year" value="<?= $year ?>">
+    <input type="hidden" name="week" value="<?= $week ?>">
     <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
             <td align="left"><input type="submit" name="cikis" value="&#10006;"></td>
@@ -32,31 +32,29 @@ $stmt->bind_result($item_id, $day_id, $done);
         <thead>
         <tr align="center">
             <th>Günlük</th>
-            <?php for ($i = 0; $i < 7; $i++) { ?>
-                <th><?php echo $days[$i]; ?></th>
-            <?php } ?>
+            <? for ($i = 0; $i < 7; $i++) { ?>
+                <th><?= $days[$i] ?></th>
+            <? } ?>
         </tr>
         </thead>
         <tbody>
-        <?php for ($i = 0; $i < $stmt->num_rows / 7; $i++) { ?>
+        <? for ($i = 0; $i < $stmt->num_rows / 7; $i++) { ?>
         <tr align="center">
-            <?php $stmt->fetch(); ?>
-            <td align="left"><?php echo $items[$item_id]; ?></td>
-            <td>
-                <input type="checkbox" name="<?php echo $item_id . '_' . $day_id; ?>"<?php echo ($done > 0) ? ' checked' : ''; ?>>
-            </td>
-            <?php for ($j = 1; $j < 7; $j++) { ?>
-            <?php $stmt->fetch(); ?>
-            <td>
-                <input type="checkbox" name="<?php echo $item_id . '_' . $day_id; ?>"<?php echo ($done > 0) ? ' checked' : ''; ?>>
-            </td>
-            <?php } ?>
+            <? for ($j = 0; $j < 7; $j++) { ?>
+                <? $stmt->fetch(); ?>
+                <? if ($j == 0) { ?>
+                <td align="left"><?= $items[$item_id] ?></td>
+                <? } ?>
+                <td>
+                    <input type="checkbox" name="<?= $item_id . '_' . $day_id ?>"<?= ($done > 0) ? ' checked' : '' ?>>
+                </td>
+            <? } ?>
         </tr>
-        <?php } ?>
+        <? } ?>
         </tbody>
     </table>
     <br/>
-    <?php
+    <?
     $stmt->close();
 
     $stmt = $db->prepare($sql_get_items);
@@ -73,19 +71,19 @@ $stmt->bind_result($item_id, $day_id, $done);
         </tr>
         </thead>
         <tbody>
-        <?php for ($i = 0; $i < $stmt->num_rows; $i++) { ?>
+        <? for ($i = 0; $i < $stmt->num_rows; $i++) { ?>
         <tr align="center">
-            <?php $stmt->fetch(); ?>
-            <td align="left"><?php echo $items[$item_id]; ?></td>
+            <? $stmt->fetch(); ?>
+            <td align="left"><?= $items[$item_id] ?></td>
             <td>
-                <input type="checkbox" name="<?php echo $item_id . '_' . $day_id; ?>"<?php echo ($done > 0) ? ' checked' : ''; ?>>
+                <input type="checkbox" name="<?= $item_id . '_' . $day_id ?>"<?= ($done > 0) ? ' checked' : '' ?>>
             </td>
         </tr>
-        <?php } ?>
+        <? } ?>
         </tbody>
     </table>
 </form>
-<?php
+<?
 $stmt->close();
 
 include('footer.php');
