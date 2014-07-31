@@ -64,6 +64,14 @@ WHERE
 ORDER BY
   i.order, d.id';
 
+$sql_current_yearweek =
+"SELECT YEARWEEK(CURDATE(), 1)
+FROM DUAL";
+
+$sql_prevnext_yearweek =
+"SELECT YEARWEEK(ADDDATE(STR_TO_DATE(CONCAT_WS('-', ?, ?, '1'), '%x-%v-%w'), INTERVAL ? DAY), 1)
+FROM DUAL";
+
 $sql_generate_current_week =
 "INSERT INTO tally (user_id, item_id, year, week, day, done)
 SELECT

@@ -1,11 +1,6 @@
 <?
 include('header.php');
 
-var_dump($_POST);
-
-$user_id = $_SESSION['user_id'];
-$year = 2014;
-$week = 31;
 $daily = 'daily';
 $weekly = 'weekly';
 
@@ -22,7 +17,7 @@ $stmt->bind_result($item_id, $day_id, $done);
         <tr>
             <td align="left"><input type="submit" name="cikis" value="&#10006;"></td>
             <td align="center"><input type="submit" name="onceki" value="&#9664;"></td>
-            <td align="center">2014, 31. Hafta</td>
+            <td align="center"><?= "$year, $week. Hafta" ?></td>
             <td align="center"><input type="submit" name="sonraki" value="&#9654;"></td>
             <td align="right"><input type="submit" name="kaydet" value="&#10004;"></td>
         </tr>
@@ -76,7 +71,7 @@ $stmt->bind_result($item_id, $day_id, $done);
             <? $stmt->fetch(); ?>
             <td align="left"><?= $items[$item_id] ?></td>
             <td>
-                <input type="checkbox" name="<?= $item_id . '_' . $day_id ?>"<?= ($done > 0) ? ' checked' : '' ?>>
+                <input type="checkbox" name="<?= $item_id ?>"<?= ($done > 0) ? ' checked' : '' ?>>
             </td>
         </tr>
         <? } ?>

@@ -5,7 +5,20 @@ session_start();
 
 include('db.php');
 
-/** login **/
+/** filters **/
+var_dump($_POST);
+
+if(!isset($_POST['year']) || !isset($_POST['week'])){
+    $stmt = $db->prepare($sql_current_yearweek);
+    $stmt->execute();
+    $stmt->bind_result($yearweek);
+    $stmt->fetch();
+    $stmt->close();
+    $year = intval(substr($yearweek, 0, 4));
+    $week = intval(substr($yearweek, 4));
+}
+
+/** actions **/
 switch (true) {
     case isset($_POST['login']):
         $stmt = $db->prepare($sql_get_user_id);
@@ -23,9 +36,16 @@ switch (true) {
         break;
 
     case isset($_POST['onceki']):
-        break;
-
     case isset($_POST['sonraki']):
+        $interval = (isset($_POST['onceki'])) ? -7 : 7;
+        $stmt = $db->prepare($sql_prevnext_yearweek);
+        $stmt->bind_param('ssi', $_POST['year'], $_POST['week'], $interval);
+        $stmt->execute();
+        $stmt->bind_result($yearweek);
+        $stmt->fetch();
+        $stmt->close();
+        $year = intval(substr($yearweek, 0, 4));
+        $week = intval(substr($yearweek, 4));
         break;
 
     case isset($_POST['cikis']):
@@ -38,5 +58,6 @@ switch (true) {
 if (!isset($_SESSION['user_id'])) {
     include('login.php');
 } else {
+    $user_id = $_SESSION['user_id'];
     include('tally.php');
 }

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34bfaec7-b370-469e-ae4f-b476041b0548" name="Default" comment="" />
+    <list default="true" id="34bfaec7-b370-469e-ae4f-b476041b0548" name="Default" comment="implemented week navigation">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.php" afterPath="$PROJECT_DIR$/db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tally.php" afterPath="$PROJECT_DIR$/tally.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="tally.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,19 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="799">
+            <state line="11" column="27" selection-start="191" selection-end="191" vertical-scroll-proportion="0.3246528" vertical-offset="0" max-vertical-offset="1156">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tally.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tally.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tally.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="43" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.79376084" vertical-offset="358" max-vertical-offset="1615">
+            <state line="19" column="48" selection-start="705" selection-end="705" vertical-scroll-proportion="-5.8431373" vertical-offset="25" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -44,24 +50,17 @@
       <file leaf-file-name="db.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1479">
+            <state line="71" column="0" selection-start="1578" selection-end="1686" vertical-scroll-proportion="-9.115385" vertical-offset="970" max-vertical-offset="1615">
               <folding>
-                <marker date="1406839746131" expanded="true" signature="773:798" placeholder="SELECT id, n..days..." />
-                <marker date="1406839746131" expanded="true" signature="974:1000" placeholder="SELECT id, n..items..." />
-                <marker date="1406839746131" expanded="true" signature="1155:1189" placeholder="SELECT id FR..users..." />
-                <marker date="1406839746131" expanded="true" signature="1211:1481" placeholder="SELECT i.id ..tally..." />
-                <marker date="1406839746131" expanded="true" signature="1515:1882" placeholder="INSERT INTO ..." />
-                <marker date="1406839746131" expanded="true" signature="1575:1611" placeholder="SELECT u.id ..." />
+                <marker date="1406844882062" expanded="true" signature="773:798" placeholder="SELECT id, n..days..." />
+                <marker date="1406844882062" expanded="true" signature="974:1000" placeholder="SELECT id, n..items..." />
+                <marker date="1406844882062" expanded="true" signature="1155:1189" placeholder="SELECT id FR..users..." />
+                <marker date="1406844882062" expanded="true" signature="1211:1481" placeholder="SELECT i.id ..tally..." />
+                <marker date="1406844882062" expanded="true" signature="1510:1549" placeholder="SELECT YEARW..DUAL..." />
+                <marker date="1406844882062" expanded="true" signature="1579:1684" placeholder="SELECT YEARW..DUAL..." />
+                <marker date="1406844882062" expanded="true" signature="1718:2085" placeholder="INSERT INTO ..." />
+                <marker date="1406844882062" expanded="true" signature="1778:1814" placeholder="SELECT u.id ..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="118" selection-start="289" selection-end="289" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="289">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -73,6 +72,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -82,9 +84,9 @@
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/pin.php" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/db.php" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/db.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/tally.php" />
       </list>
     </option>
@@ -130,7 +132,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -187,6 +189,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="294" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="968" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="297" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="286" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="972" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -242,12 +260,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977587" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32870865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23322684" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22151224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -255,7 +274,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -277,6 +296,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="implemented week navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented week navigation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -320,27 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
-          <folding>
-            <marker date="1406839746131" expanded="true" signature="773:798" placeholder="SELECT id, n..days..." />
-            <marker date="1406839746131" expanded="true" signature="974:1000" placeholder="SELECT id, n..items..." />
-            <marker date="1406839746131" expanded="true" signature="1155:1189" placeholder="SELECT id FR..users..." />
-            <marker date="1406839746131" expanded="true" signature="1211:1481" placeholder="SELECT i.id ..tally..." />
-            <marker date="1406839746131" expanded="true" signature="1515:1882" placeholder="INSERT INTO ..." />
-            <marker date="1406839746131" expanded="true" signature="1575:1611" placeholder="SELECT u.id ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="118" selection-start="289" selection-end="289" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="289">
@@ -348,9 +348,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="0" selection-start="1578" selection-end="1686" vertical-scroll-proportion="-9.115385" vertical-offset="970" max-vertical-offset="1615">
+          <folding>
+            <marker date="1406844882062" expanded="true" signature="773:798" placeholder="SELECT id, n..days..." />
+            <marker date="1406844882062" expanded="true" signature="974:1000" placeholder="SELECT id, n..items..." />
+            <marker date="1406844882062" expanded="true" signature="1155:1189" placeholder="SELECT id FR..users..." />
+            <marker date="1406844882062" expanded="true" signature="1211:1481" placeholder="SELECT i.id ..tally..." />
+            <marker date="1406844882062" expanded="true" signature="1510:1549" placeholder="SELECT YEARW..DUAL..." />
+            <marker date="1406844882062" expanded="true" signature="1579:1684" placeholder="SELECT YEARW..DUAL..." />
+            <marker date="1406844882062" expanded="true" signature="1718:2085" placeholder="INSERT INTO ..." />
+            <marker date="1406844882062" expanded="true" signature="1778:1814" placeholder="SELECT u.id ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tally.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="43" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.79376084" vertical-offset="358" max-vertical-offset="1615">
+        <state line="19" column="48" selection-start="705" selection-end="705" vertical-scroll-proportion="-5.8431373" vertical-offset="25" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="191" selection-end="191" vertical-scroll-proportion="0.3246528" vertical-offset="0" max-vertical-offset="1156">
           <folding />
         </state>
       </provider>
