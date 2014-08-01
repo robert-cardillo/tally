@@ -44,13 +44,14 @@ while ($stmt->fetch()) {
 $stmt->close();
 
 /** sql **/
-$sql_get_user_id =
-'SELECT id
+$sql_get_user_id = "
+SELECT id
 FROM users
-WHERE pin = ?';
+WHERE pin = ?
+";
 
-$sql_get_items =
-'SELECT
+$sql_get_items ="
+SELECT
   i.id item_id,
   d.id day_id,
   t.done
@@ -63,30 +64,50 @@ WHERE
   AND t.year = ?
   AND t.week = ?
   AND i.period = ?
-ORDER BY
-  i.order, d.id';
+ORDER BY i.order, d.id
+";
 
-$sql_current_yearweek =
-"SELECT YEARWEEK(CURDATE(), 1)
-FROM DUAL";
-
-$sql_prevnext_yearweek =
-"SELECT YEARWEEK(ADDDATE(STR_TO_DATE(CONCAT_WS('-', ?, ?, '1'), '%x-%v-%w'), INTERVAL ? DAY), 1)
-FROM DUAL";
-
-$sql_generate_current_week =
-"INSERT INTO tally (user_id, item_id, year, week, day, done)
-SELECT
- u.id user_id,
- i.id item_id,
- YEAR(ADDDATE(CURDATE(), INTERVAL -WEEKDAY(CURDATE()) DAY)) year,
- WEEKOFYEAR(week_monday(CURDATE())) week,
- IF(i.period='daily', d.id, NULL) day,
- 0 done
-FROM
- users u, items i, days d
+$sql_clear_items = "
+UPDATE tally t
+SET t.done = 0
 WHERE
- (i.period = 'daily' OR (i.period = 'weekly' AND d.id = 0 ))
- AND u.id = ?
-ORDER BY
- i.period, i.order, d.id";
+  t.user_id = ?
+  AND t.year = ?
+  AND t.week = ?
+";
+
+$sql_mark_items = "
+UPDATE tally t
+SET t.done = 1
+WHERE
+  t.user_id = ?
+  AND t.year = ?
+  AND t.week = ?
+  AND INSTR(CONCAT(',', ?, ','), CONCAT(',', t.item_id, '_', IFNULL(t.day, ''), ',')) > 0
+";
+
+$sql_generate_current_week = "
+INSERT INTO tally (user_id, item_id, year, week, day, done)
+SELECT
+  u.id user_id,
+  i.id item_id,
+  YEAR(ADDDATE(CURDATE(), INTERVAL -WEEKDAY(CURDATE()) DAY)) year,
+  WEEKOFYEAR(week_monday(CURDATE())) week,
+  IF(i.period='daily', d.id, NULL) day,
+  0 done
+FROM users u, items i, days d
+WHERE
+  (i.period = 'daily' OR (i.period = 'weekly' AND d.id = 0 ))
+  AND u.id = ?
+ORDER BY i.period, i.order, d.id
+";
+
+$sql_current_yearweek = "
+SELECT YEARWEEK(CURDATE(), 1)
+FROM DUAL
+";
+
+$sql_prevnext_yearweek = "
+SELECT YEARWEEK(ADDDATE(STR_TO_DATE(CONCAT_WS('-', ?, ?, '1'), '%x-%v-%w'), INTERVAL ? DAY), 1)
+FROM DUAL
+";

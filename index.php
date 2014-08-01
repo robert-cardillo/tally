@@ -1,14 +1,10 @@
 <?
-//ini_set('error_reporting', 0);
-
 session_start();
 
 include('db.php');
 
 /** filters **/
-var_dump($_POST);
-
-if(!isset($_POST['year']) || !isset($_POST['week'])){
+if (!isset($_POST['year']) || !isset($_POST['week'])) {
     $stmt = $db->prepare($sql_current_yearweek);
     $stmt->execute();
     $stmt->bind_result($yearweek);
@@ -16,6 +12,13 @@ if(!isset($_POST['year']) || !isset($_POST['week'])){
     $stmt->close();
     $year = intval(substr($yearweek, 0, 4));
     $week = intval(substr($yearweek, 4));
+} else {
+    $year = $_POST['year'];
+    $week = $_POST['week'];
+}
+
+if (isset($_SESSION['user_id'])) {
+    $user_id = $_SESSION['user_id'];
 }
 
 /** actions **/
@@ -39,7 +42,7 @@ switch (true) {
     case isset($_POST['sonraki']):
         $interval = (isset($_POST['onceki'])) ? -7 : 7;
         $stmt = $db->prepare($sql_prevnext_yearweek);
-        $stmt->bind_param('ssi', $_POST['year'], $_POST['week'], $interval);
+        $stmt->bind_param('ssi', $year, $week, $interval);
         $stmt->execute();
         $stmt->bind_result($yearweek);
         $stmt->fetch();
@@ -54,14 +57,23 @@ switch (true) {
         break;
 
     case isset($_POST['kaydet']):
+        $stmt = $db->prepare($sql_clear_items);
+        $stmt->bind_param('iii', $user_id, $year, $week);
+        $stmt->execute();
+        $stmt->close();
 
+        $implode = implode(',', array_keys($_POST['items']));
+
+        $stmt = $db->prepare($sql_mark_items);
+        $stmt->bind_param('iiis', $user_id, $year, $week, $implode);
+        $stmt->execute();
+        $stmt->close();
         break;
 }
 
-/** session **/
+/** routing **/
 if (!isset($_SESSION['user_id'])) {
     include('login.php');
 } else {
-    $user_id = $_SESSION['user_id'];
     include('tally.php');
 }

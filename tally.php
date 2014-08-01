@@ -41,7 +41,7 @@ $stmt->bind_result($item_id, $day_id, $done);
                 <td align="left"><?= $items[$item_id] ?></td>
                 <? } ?>
                 <td>
-                    <input type="checkbox" name="<?= $item_id . '_' . $day_id ?>"<?= ($done > 0) ? ' checked' : '' ?>>
+                    <input type="checkbox" name="items[<?= $item_id . '_' . $day_id ?>]"<?= ($done > 0) ? ' checked' : '' ?>>
                 </td>
             <? } ?>
         </tr>
@@ -71,7 +71,7 @@ $stmt->bind_result($item_id, $day_id, $done);
             <? $stmt->fetch(); ?>
             <td align="left"><?= $items[$item_id] ?></td>
             <td>
-                <input type="checkbox" name="<?= $item_id ?>"<?= ($done > 0) ? ' checked' : '' ?>>
+                <input type="checkbox" name="items[<?= $item_id . '_' ?>]"<?= ($done > 0) ? ' checked' : '' ?>>
             </td>
         </tr>
         <? } ?>
