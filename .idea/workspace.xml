@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34bfaec7-b370-469e-ae4f-b476041b0548" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.php" afterPath="$PROJECT_DIR$/db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tally.php" afterPath="$PROJECT_DIR$/tally.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -40,37 +38,17 @@
       <file leaf-file-name="tally.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tally.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.05074627" vertical-offset="0" max-vertical-offset="1530">
-              <folding>
-                <marker date="1406893025413" expanded="true" signature="2030:2470" placeholder="..." />
-                <marker date="1406893025413" expanded="true" signature="2046:2167" placeholder="..." />
-                <marker date="1406893025413" expanded="true" signature="2183:2470" placeholder="..." />
-                <marker date="1406893025413" expanded="true" signature="2268:2470" placeholder="..." />
-                <marker date="1406893025413" expanded="true" signature="2377:2470" placeholder="..." />
-              </folding>
+            <state line="24" column="0" selection-start="850" selection-end="850" vertical-scroll-proportion="0.40597016" vertical-offset="0" max-vertical-offset="1530">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db.php">
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="2" selection-start="1745" selection-end="1745" vertical-scroll-proportion="-55.576923" vertical-offset="0" max-vertical-offset="2006">
-              <folding>
-                <marker date="1406892964837" expanded="true" signature="813:838" placeholder="SELECT id, n..days..." />
-                <marker date="1406892964837" expanded="true" signature="1014:1040" placeholder="SELECT id, n..items..." />
-                <marker date="1406892964837" expanded="true" signature="1196:1251" placeholder="SELECT id FR..users..." />
-                <marker date="1406892964837" expanded="true" signature="1196:1230" placeholder="SELECT id FR..users..." />
-                <marker date="1406892964837" expanded="true" signature="1253:1865" placeholder="SELECT i.id ..tally..." />
-                <marker date="1406892964837" expanded="true" signature="1253:1521" placeholder="SELECT i.id ..tally..." />
-                <marker date="1406892964837" expanded="true" signature="1253:1521" placeholder="SELECT i.id ..tally..." />
-                <marker date="1406892964837" expanded="true" signature="1547:1632" placeholder="UPDATE tally..." />
-                <marker date="1406892964837" expanded="true" signature="1657:1832" placeholder="UPDATE tally..." />
-                <marker date="1406892964837" expanded="true" signature="1868:2271" placeholder="INSERT INTO ..." />
-                <marker date="1406892964837" expanded="true" signature="1928:1966" placeholder="SELECT u.id ..." />
-                <marker date="1406892964837" expanded="true" signature="2302:2341" placeholder="SELECT YEARW..DUAL..." />
-                <marker date="1406892964837" expanded="true" signature="2373:2478" placeholder="SELECT YEARW..DUAL..." />
-              </folding>
+            <state line="6" column="5" selection-start="144" selection-end="144" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,7 +67,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/table.php" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/pin.php" />
@@ -97,6 +74,7 @@
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/db.php" />
+        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/tally.php" />
       </list>
     </option>
@@ -266,7 +244,11 @@
       <created>1406889384879</created>
       <updated>1406889384879</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented save action">
+      <created>1406893057821</created>
+      <updated>1406893057821</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -309,7 +291,8 @@
     </option>
     <MESSAGE value="implemented week navigation" />
     <MESSAGE value="fix for timezone" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix for timezone" />
+    <MESSAGE value="implemented save action" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented save action" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -327,13 +310,7 @@
     <entry file="file://$PROJECT_DIR$/tally.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="48" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1649">
-          <folding>
-            <marker date="1406893025413" expanded="true" signature="2030:2470" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2046:2167" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2183:2470" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2268:2470" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2377:2470" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -341,19 +318,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="0" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="1343">
           <folding>
-            <marker date="1406892964837" expanded="true" signature="813:838" placeholder="SELECT id, n..days..." />
-            <marker date="1406892964837" expanded="true" signature="1014:1040" placeholder="SELECT id, n..items..." />
-            <marker date="1406892964837" expanded="true" signature="1196:1251" placeholder="SELECT id FR..users..." />
-            <marker date="1406892964837" expanded="true" signature="1196:1230" placeholder="SELECT id FR..users..." />
-            <marker date="1406892964837" expanded="true" signature="1253:1865" placeholder="SELECT i.id ..tally..." />
-            <marker date="1406892964837" expanded="true" signature="1253:1521" placeholder="SELECT i.id ..tally..." />
-            <marker date="1406892964837" expanded="true" signature="1253:1521" placeholder="SELECT i.id ..tally..." />
-            <marker date="1406892964837" expanded="true" signature="1547:1632" placeholder="UPDATE tally..." />
-            <marker date="1406892964837" expanded="true" signature="1657:1832" placeholder="UPDATE tally..." />
-            <marker date="1406892964837" expanded="true" signature="1868:2271" placeholder="INSERT INTO ..." />
-            <marker date="1406892964837" expanded="true" signature="1928:1966" placeholder="SELECT u.id ..." />
-            <marker date="1406892964837" expanded="true" signature="2302:2341" placeholder="SELECT YEARW..DUAL..." />
-            <marker date="1406892964837" expanded="true" signature="2373:2478" placeholder="SELECT YEARW..DUAL..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT id, n..days..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT id, n..items..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT id FR..users..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT id FR..users..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT i.id ..tally..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT i.id ..tally..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT i.id ..tally..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="UPDATE tally..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="UPDATE tally..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT u.id ..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT YEARW..DUAL..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT YEARW..DUAL..." />
           </folding>
         </state>
       </provider>
@@ -368,24 +345,13 @@
     <entry file="file://$PROJECT_DIR$/tally.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="66" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1649">
-          <folding>
-            <marker date="1406893025413" expanded="true" signature="2030:2470" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2046:2167" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2183:2470" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2268:2470" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2377:2470" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="7" selection-start="8" selection-end="15" vertical-scroll-proportion="0.016536964" vertical-offset="0" max-vertical-offset="1028" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="145" selection-end="145" vertical-scroll-proportion="0.09922179" vertical-offset="0" max-vertical-offset="1028" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
@@ -402,35 +368,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="2" selection-start="1745" selection-end="1745" vertical-scroll-proportion="-55.576923" vertical-offset="0" max-vertical-offset="2006">
+        <state line="85" column="2" selection-start="1745" selection-end="1745" vertical-scroll-proportion="1.4378109" vertical-offset="0" max-vertical-offset="2006">
           <folding>
-            <marker date="1406892964837" expanded="true" signature="813:838" placeholder="SELECT id, n..days..." />
-            <marker date="1406892964837" expanded="true" signature="1014:1040" placeholder="SELECT id, n..items..." />
-            <marker date="1406892964837" expanded="true" signature="1196:1251" placeholder="SELECT id FR..users..." />
-            <marker date="1406892964837" expanded="true" signature="1196:1230" placeholder="SELECT id FR..users..." />
-            <marker date="1406892964837" expanded="true" signature="1253:1865" placeholder="SELECT i.id ..tally..." />
-            <marker date="1406892964837" expanded="true" signature="1253:1521" placeholder="SELECT i.id ..tally..." />
-            <marker date="1406892964837" expanded="true" signature="1253:1521" placeholder="SELECT i.id ..tally..." />
-            <marker date="1406892964837" expanded="true" signature="1547:1632" placeholder="UPDATE tally..." />
-            <marker date="1406892964837" expanded="true" signature="1657:1832" placeholder="UPDATE tally..." />
-            <marker date="1406892964837" expanded="true" signature="1868:2271" placeholder="INSERT INTO ..." />
-            <marker date="1406892964837" expanded="true" signature="1928:1966" placeholder="SELECT u.id ..." />
-            <marker date="1406892964837" expanded="true" signature="2302:2341" placeholder="SELECT YEARW..DUAL..." />
-            <marker date="1406892964837" expanded="true" signature="2373:2478" placeholder="SELECT YEARW..DUAL..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT id, n..days..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT id, n..items..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT id FR..users..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT id FR..users..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT i.id ..tally..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT i.id ..tally..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT i.id ..tally..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="UPDATE tally..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="UPDATE tally..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT u.id ..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT YEARW..DUAL..." />
+            <marker date="1406892964837" expanded="true" signature="-1:-1" placeholder="SELECT YEARW..DUAL..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="5" selection-start="144" selection-end="144" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tally.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.05074627" vertical-offset="0" max-vertical-offset="1530">
-          <folding>
-            <marker date="1406893025413" expanded="true" signature="2030:2470" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2046:2167" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2183:2470" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2268:2470" placeholder="..." />
-            <marker date="1406893025413" expanded="true" signature="2377:2470" placeholder="..." />
-          </folding>
+        <state line="24" column="0" selection-start="850" selection-end="850" vertical-scroll-proportion="0.40597016" vertical-offset="0" max-vertical-offset="1530">
+          <folding />
         </state>
       </provider>
     </entry>
