@@ -23,6 +23,13 @@ $stmt->bind_result($item_id, $day_id, $done);
     </tr>
 </table>
 <br/>
+<?
+if ($stmt->num_rows <= 0) {
+?>
+<button type="submit" name="olustur" style="width: 100%;"><h1>Oluştur<h1/></button>
+<?
+} else {
+?>
 <table width="100%" border="1">
     <thead>
     <tr align="center">
@@ -80,6 +87,7 @@ $stmt->bind_result($item_id, $day_id, $done);
 </form>
 <?
 $stmt->close();
+}
 
 include('footer.php');
 ?>

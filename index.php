@@ -69,6 +69,14 @@ switch (true) {
         $stmt->execute();
         $stmt->close();
         break;
+
+    case isset($_POST['olustur']):
+        $stmt = $db->prepare($sql_generate_current_week);
+        $stmt->bind_param('iii', $year, $week, $user_id);
+        $stmt->execute();
+        echo $stmt->error;
+        $stmt->close();
+        break;
 }
 
 /** routing **/

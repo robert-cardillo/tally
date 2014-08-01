@@ -91,15 +91,14 @@ INSERT INTO tally (user_id, item_id, year, week, day, done)
 SELECT
   u.id user_id,
   i.id item_id,
-  YEAR(ADDDATE(CURDATE(), INTERVAL -WEEKDAY(CURDATE()) DAY)) year,
-  WEEKOFYEAR(week_monday(CURDATE())) week,
+  ? year,
+  ? week,
   IF(i.period='daily', d.id, NULL) day,
   0 done
 FROM users u, items i, days d
 WHERE
   (i.period = 'daily' OR (i.period = 'weekly' AND d.id = 0 ))
   AND u.id = ?
-ORDER BY i.period, i.order, d.id
 ";
 
 $sql_current_yearweek = "
