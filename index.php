@@ -52,6 +52,10 @@ switch (true) {
         unset($_SESSION);
         session_destroy();
         break;
+
+    case isset($_POST['kaydet']):
+
+        break;
 }
 
 /** session **/

@@ -21,6 +21,8 @@ if ($db->connect_error) {
 
 $db->query("SET NAMES 'utf8' COLLATE 'utf8_general_ci'");
 
+$db->query("SET timezone = '+03:00'");
+
 /** days **/
 $days = array();
 $stmt = $db->prepare('SELECT id, name FROM days');
@@ -77,7 +79,7 @@ $sql_generate_current_week =
 SELECT
  u.id user_id,
  i.id item_id,
- YEAR(week_monday(CURDATE())) year,
+ YEAR(ADDDATE(CURDATE(), INTERVAL -WEEKDAY(CURDATE()) DAY)) year,
  WEEKOFYEAR(week_monday(CURDATE())) week,
  IF(i.period='daily', d.id, NULL) day,
  0 done
