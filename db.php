@@ -21,7 +21,7 @@ if ($db->connect_error) {
 
 $db->query("SET NAMES 'utf8' COLLATE 'utf8_general_ci'");
 
-$db->query("SET timezone = '+03:00'");
+$db->query("SET time_zone = '+03:00'");
 
 /** days **/
 $days = array();
