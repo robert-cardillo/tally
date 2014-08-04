@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34bfaec7-b370-469e-ae4f-b476041b0548" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tally.iws" />
@@ -26,22 +26,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="34" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0561674" vertical-offset="0" max-vertical-offset="1700">
+            <state line="3" column="34" selection-start="108" selection-end="108" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1700">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="login.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="2" selection-start="510" selection-end="510" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
-              <folding>
-                <element signature="e#200#219#0" expanded="true" />
-              </folding>
+            <state line="11" column="2" selection-start="397" selection-end="397" vertical-scroll-proportion="0.20594713" vertical-offset="0" max-vertical-offset="908">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,8 +85,8 @@
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/tally.php" />
         <option value="$PROJECT_DIR$/db.php" />
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/login.php" />
       </list>
     </option>
   </component>
@@ -278,7 +276,11 @@
       <created>1407172974940</created>
       <updated>1407172974940</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix: force https on production">
+      <created>1407173240842</created>
+      <updated>1407173240842</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -325,7 +327,8 @@
     <MESSAGE value="implemented generate action" />
     <MESSAGE value="typo fixed: timezone =&gt; time_zone" />
     <MESSAGE value="force https on production, login input type number/password hack" />
-    <option name="LAST_COMMIT_MESSAGE" value="force https on production, login input type number/password hack" />
+    <MESSAGE value="fix: force https on production" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: force https on production" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -497,18 +500,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="2" selection-start="510" selection-end="510" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
-          <folding>
-            <element signature="e#200#219#0" expanded="true" />
-          </folding>
+        <state line="3" column="34" selection-start="108" selection-end="108" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1700">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="34" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0561674" vertical-offset="0" max-vertical-offset="1700">
+        <state line="11" column="2" selection-start="397" selection-end="397" vertical-scroll-proportion="0.20594713" vertical-offset="0" max-vertical-offset="908">
           <folding />
         </state>
       </provider>
