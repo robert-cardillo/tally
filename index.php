@@ -1,7 +1,7 @@
 <?
 /** force https on production **/
 if (getenv('OPENSHIFT_GEAR_NAME')) {
-    if ($_SERVER["HTTPS"] != "on") {
+    if (empty($_SERVER['HTTPS'])) {
         header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
         exit();
     }
